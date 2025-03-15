@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Landing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body{
+            background-image: url(./assets/images/kids-learning.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            height: 100vh;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            height: 100px;
+            width: 300px;
+            cursor: pointer;
+        }
+        .links{
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            font-size: 27px;
+            cursor: pointer;
+            margin-right: 50px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+        }
+        .hero{
+            background-color: #ffe4abe8;
+            width: 35%;
+            margin-top: 80px;
+            margin-left: 20px;
+            padding: 30px 30px;
+            border-radius: 10px;
+        }
+        .hero h1{
+            font-size: 80px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .hero button{
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            background-color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 580;
+            padding: 20px;
+            width: 160px;
+            border-radius: 20px;
+            border: none;
+            font-size: 20px;
+            transition: all ease-in-out 0.3s;
+            cursor: pointer;
+        }
+        .hero button:hover{
+            color: white;
+            background-color: red;
+        }
+        
+        @media (max-width: 926px) {
+            .links{
+                display: none;
+            }
+            .logo{
+                height: 70px;
+                width: 150px;
+                margin-left: 8px;
+            }
+            .hero{
+                margin-left: 0px;
+                width: 50%;
+            }
+            .hero h1{
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img class="logo" src="./assets/images/gomycode.svg" alt="">
+    <nav>
+        <ul class="links">
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Unlock <br> Your Future.</h1>
+        <button>Join us</button>
+    </section>
+</main>
+</body>
+</html>
